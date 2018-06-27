@@ -12,6 +12,8 @@ class RPSGame
     @@valid_moves.include? move
   end
 
+  
+
 
 
   class PlayTypeError < StandardError
