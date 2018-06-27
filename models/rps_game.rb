@@ -18,8 +18,8 @@ class RPSGame
 
   def computer_play
     random_int = rand(3)
-    @computer_move = @@valid_moves[random_int]
-    return @computer_move
+    @computer_play = @@valid_moves[random_int]
+    return @computer_play
   end
 
   def won?
