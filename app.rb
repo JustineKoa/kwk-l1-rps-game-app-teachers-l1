@@ -1,4 +1,5 @@
 require_relative 'config/environment'
+require_relative 'models/rps_game.rb'
 
 class GameApp < Sinatra::Base
   get '/rps/:play' do
