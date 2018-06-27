@@ -3,12 +3,12 @@ class RPSGame
   # Write your code here!
   def initialize(move)
     @move = move
-    if !valid_play?(move)
+    if !self.valid_play?(move)
       raise PlayTypeError
     end
   end
 
-  def valid_play?(move)
+  def self.valid_play?(move)
     @@valid_moves.include? move
   end
 
