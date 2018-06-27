@@ -23,8 +23,19 @@ class RPSGame
     else
       return true
     end
+  end
 
-  def 
+  def tied
+    if @move == @computer_play
+      return true
+    else
+      return false
+    end
+  end
+
+  def lost
+    return !self.won?
+  end
 
 
 
