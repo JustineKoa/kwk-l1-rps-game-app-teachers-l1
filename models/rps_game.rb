@@ -1,6 +1,12 @@
 class RPSGame
-
+  @@valid_moves = ["rock", "paper", "scissors"]
   # Write your code here!
+  def initialize(move)
+    @move = move
+    if !@@valid_moves.include? move
+      raise PlayTypeError
+    end
+  end
 
 
 
