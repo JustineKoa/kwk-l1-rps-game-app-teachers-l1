@@ -46,4 +46,5 @@ class RPSGame
 end
 
 game = RPSGame.new("scissors")
-game.computer_play
+puts game.computer_play
+puts game.won?
