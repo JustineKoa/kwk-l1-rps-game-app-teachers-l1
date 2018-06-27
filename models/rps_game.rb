@@ -45,3 +45,6 @@ class RPSGame
   end
 
 end
+
+game = RPSGame.new("hi")
+
