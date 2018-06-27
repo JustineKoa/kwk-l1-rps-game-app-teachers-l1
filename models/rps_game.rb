@@ -3,7 +3,7 @@ class RPSGame
   # Write your code here!
   def initialize(move)
     @move = move
-    if !valid_play?(move)
+    if !self.valid_play?(move)
       raise PlayTypeError
     end
   end
@@ -18,7 +18,7 @@ class RPSGame
   end
 
   def won?
-    if @move == @computer_play || (@move == "rock" && @computer_play == "paper") || (@move == "paper" && @computer_play == "scissors") || (@move == "scissors" && @computer_play == "rock")
+    if self.tied? || (@move == "rock" && @computer_play == "paper") || (@move == "paper" && @computer_play == "scissors") || (@move == "scissors" && @computer_play == "rock")
       return false
     else
       return true
