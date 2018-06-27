@@ -15,8 +15,8 @@ class GameApp < Sinatra::Base
     erb :rps_game
   end
 
-  post '/back' do
-    erb :index
-  end
+  # post '/back' do
+  #   erb :index
+  # end
 
 end
