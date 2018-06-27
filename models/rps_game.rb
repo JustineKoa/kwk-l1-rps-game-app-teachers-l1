@@ -8,7 +8,7 @@ class RPSGame
     end
   end
 
-  def @valid_play?(move)
+  def valid_play?(move)
     @@valid_moves.include? move
   end
 
