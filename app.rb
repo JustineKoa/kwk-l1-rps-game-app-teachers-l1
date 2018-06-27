@@ -13,8 +13,9 @@ class GameApp < Sinatra::Base
   post '/start_game' do
     @player_move = params["move"]
     game = RPSGame.new(@player_move)
-    game.computer_play
-    game.won?
+    puts @player_move
+    puts game.computer_play
+    puts game.won?
 
   end
 
