@@ -3,7 +3,7 @@ class RPSGame
   # Write your code here!
   def initialize(move)
     @move = move
-    if !self.valid_play?(move)
+    if !valid_play?(move)
       raise PlayTypeError
     end
   end
