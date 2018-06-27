@@ -46,5 +46,4 @@ class RPSGame
 
 end
 
-game = RPSGame.new("hi")
-
+game = RPSGame.new("scissors")
