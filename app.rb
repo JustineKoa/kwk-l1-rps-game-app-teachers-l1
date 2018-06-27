@@ -9,5 +9,5 @@ class GameApp < Sinatra::Base
   get '/rps_game' do
     erb :rps_game
   end
-  
+
 end
