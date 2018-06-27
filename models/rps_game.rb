@@ -12,7 +12,10 @@ class RPSGame
     @@valid_moves.include? move
   end
 
-  
+  def computer_play
+    random_int = rand(3)
+    @@valid_moves[random_int]
+  end
 
 
 
