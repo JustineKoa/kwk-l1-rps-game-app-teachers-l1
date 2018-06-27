@@ -8,7 +8,7 @@ class RPSGame
     end
   end
 
-  def valid_play(move)
+  def valid_play?(move)
     @@valid_moves.include? move
   end
 
@@ -17,7 +17,7 @@ class RPSGame
     @@valid_moves[random_int]
   end
 
-  def won
+  def won?
     if @move == @computer_play || (@move == "rock" && @computer_play == "paper") || (@move == "paper" && @computer_play == "scissors") || (@move == "scissors" && @computer_play == "rock")
       return false
     else
@@ -25,7 +25,7 @@ class RPSGame
     end
   end
 
-  def tied
+  def tied?
     if @move == @computer_play
       return true
     else
@@ -33,7 +33,7 @@ class RPSGame
     end
   end
 
-  def lost
+  def lost?
     return !self.won?
   end
 
