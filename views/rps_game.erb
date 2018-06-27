@@ -4,7 +4,7 @@
 <h1><%= "Computer's move: " + @computer_move%></h1>
 <% if @game.won?%>
   <h1>You won!</h1>
-<% elif @game.tied?%>
+<% elsif @game.tied?%>
   <h1>You tied!</h1>
 <%else%>
   <h1>You lost!</h1>
