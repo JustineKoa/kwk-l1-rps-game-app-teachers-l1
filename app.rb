@@ -12,7 +12,7 @@ class GameApp < Sinatra::Base
     # puts @player_move
     @computer_move = game.computer_play
     # puts game.won?
-    erb: rps_game
+    erb :rps_game
   end
 
 end
