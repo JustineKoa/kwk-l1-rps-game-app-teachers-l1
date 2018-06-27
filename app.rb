@@ -6,7 +6,7 @@ class GameApp < Sinatra::Base
     erb :index
   end
 
-  post '/start_game' do
+  post '/play' do
     @player_move = params["move"]
     @game = RPSGame.new(@player_move)
     # puts @player_move
