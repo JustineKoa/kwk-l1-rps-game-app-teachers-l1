@@ -10,7 +10,7 @@ class GameApp < Sinatra::Base
     @player_move = params["move"]
     @game = RPSGame.new(@player_move)
     # puts @player_move
-    @computer_move = game.computer_play
+    @computer_move = @game.computer_play
     # puts game.won?
     erb :rps_game
   end
