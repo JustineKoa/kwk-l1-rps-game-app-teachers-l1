@@ -10,4 +10,12 @@ class GameApp < Sinatra::Base
     erb :rps_game
   end
 
+  post '/start_game' do
+    @player_move = params["move"]
+    game = RPSGame.new(@player_move)
+    game.computer_play
+    game.won?
+
+  end
+
 end
