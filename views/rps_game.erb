@@ -1,4 +1,11 @@
 <h1>WELCOME TO ROCK PAPER SCISSORS</h1>
 
-
-<h1><%= @game.win?%></h1>
+<h1><%= "Your move: " + @player_move%></h1>
+<h1><%= "Computer's move: " + @computer_move%></h1>
+<% if @game.win?%>
+  <h1>You won!</h1>
+<% elif @game.tie?%>
+  <h1>You tied!</h1>
+<%else%>
+  <h1>You lost!</h1>
+<%end%>
