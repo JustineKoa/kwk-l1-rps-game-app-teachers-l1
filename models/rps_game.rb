@@ -14,7 +14,8 @@ class RPSGame
 
   def computer_play
     random_int = rand(3)
-    @@valid_moves[random_int]
+    @computer_move = @@valid_moves[random_int]
+    return @computer_move
   end
 
   def won?
@@ -43,3 +44,6 @@ class RPSGame
   end
 
 end
+
+game = RPSGame.new("scissors")
+game.computer_play
