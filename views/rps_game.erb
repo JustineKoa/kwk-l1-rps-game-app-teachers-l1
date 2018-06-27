@@ -1,15 +1,27 @@
-<h1>WELCOME TO ROCK PAPER SCISSORS</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors!</title>
+  </head>
+  <body>
+    
+    <h1>WELCOME TO ROCK PAPER SCISSORS</h1>
 
-<h1><%= "Your move: " + @player_move%></h1>
-<h1><%= "Computer's move: " + @computer_move%></h1>
-<% if @game.won?%>
-  <h1>You won!</h1>
-<% elsif @game.tied?%>
-  <h1>You tied!</h1>
-<%else%>
-  <h1>You lost!</h1>
-<%end%>
+    <h1><%= "Your move: " + @player_move%></h1>
+    <h1><%= "Computer's move: " + @computer_move%></h1>
+    <% if @game.won?%>
+      <h1>You won!</h1>
+    <% elsif @game.tied?%>
+      <h1>You tied!</h1>
+    <%else%>
+      <h1>You lost!</h1>
+    <%end%>
 
-<form method="POST" action="/back">
-  <input type="submit" name="back" value="PLAY AGAIN">
-</form>
+    <form method="POST" action="/back">
+      <input type="submit" name="back" value="PLAY AGAIN">
+    </form>
+
+
+  </body>
+</html>

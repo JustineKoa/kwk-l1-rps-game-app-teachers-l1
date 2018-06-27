@@ -48,4 +48,3 @@ class RPSGame
   end
 
 end
-
