@@ -1,5 +1,5 @@
 class RPSGame
-  @@valid_moves = ["rock", "paper", "scissors"]
+  @@valid_moves = ["ROCK", "PAPER", "SCISSORS"]
   # Write your code here!
   def initialize(move)
     @move = move
@@ -23,7 +23,7 @@ class RPSGame
   end
 
   def won?
-    if self.tied? || (@move == "rock" && @computer_play == "paper") || (@move == "paper" && @computer_play == "scissors") || (@move == "scissors" && @computer_play == "rock")
+    if self.tied? || (@move == "ROCK" && @computer_play == "PAPER") || (@move == "PAPER" && @computer_play == "SCISSORS") || (@move == "SCISSORS" && @computer_play == "rock")
       return false
     else
       return true
@@ -49,7 +49,3 @@ class RPSGame
 
 end
 
-# game = RPSGame.new("scissors")
-# puts game.move
-# puts game.computer_play
-# puts game.won?
