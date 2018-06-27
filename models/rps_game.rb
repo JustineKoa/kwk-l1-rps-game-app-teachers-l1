@@ -17,6 +17,15 @@ class RPSGame
     @@valid_moves[random_int]
   end
 
+  def won
+    if @move == @computer_play || (@move == "rock" && @computer_play == "paper") || (@move == "paper" && @computer_play == "scissors") || (@move == "scissors" && @computer_play == "rock")
+      return false
+    else
+      return true
+    end
+
+  def 
+
 
 
   class PlayTypeError < StandardError
